@@ -46,7 +46,7 @@ The high performance is attributed to contextual semantic modeling and structure
 - Classifier: Logistic Regression
 
 ### Deep Learning Model
-- Pretrained Model: bert-base-uncased
+- Pretrained Model: `bert-base-uncased`
 - Fine-tuned for binary classification
 - Max Sequence Length: 256
 - Optimizer: AdamW
@@ -60,7 +60,7 @@ Kaggle Fake and Real News Dataset.
 
 Due to size constraints, the dataset is not included in this repository.
 
-Download link:
+Download link:  
 https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset
 
 ---
@@ -73,8 +73,10 @@ fake-news-app/ → React Native mobile frontend
 
 ---
 
+
 ## 🚀 Backend Setup
 
+```bash
 cd backend
 pip install -r requirements.txt
 python app.py
