@@ -1,102 +1,72 @@
-# Deep Learning Approaches for Automated Misinformation Detection
+project:
+  title: Deep Learning Approaches for Automated Misinformation Detection
+  description: >
+    A comparative study of classical machine learning and transformer-based
+    deep learning techniques for fake news classification.
 
-A comparative study of classical machine learning and transformer-based deep learning techniques for fake news classification.
+overview:
+  dataset: Kaggle Fake and Real News Dataset
+  models:
+    - TF-IDF + Logistic Regression (Baseline)
+    - BERT (bert-base-uncased Transformer Model)
+  deployment:
+    backend: Flask REST API
+    frontend: React Native Mobile Application
 
----
+motivation: >
+  The rapid spread of misinformation across digital platforms poses significant
+  societal challenges. Automated detection systems leveraging contextual language
+  models can assist in mitigating fake news dissemination. This project explores
+  both traditional and transformer-based deep learning methods for robust classification.
 
-## 📌 Overview
+experimental_results:
+  - model: Logistic Regression
+    accuracy: 98.78%
+  - model: BERT (Transformer)
+    accuracy: 99.98%
 
-This project implements and evaluates multiple approaches for automated misinformation detection using the Kaggle Fake and Real News Dataset.
+model_architecture:
+  baseline_model:
+    text_vectorization: TF-IDF
+    classifier: Logistic Regression
+  deep_learning_model:
+    pretrained_model: bert-base-uncased
+    max_sequence_length: 256
+    optimizer: AdamW
+    loss_function: Cross-Entropy
 
-The study compares:
+dataset:
+  name: Kaggle Fake and Real News Dataset
+  included_in_repo: false
+  download_link: https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset
 
-- TF-IDF + Logistic Regression (Baseline)
-- BERT (`bert-base-uncased` Transformer Model)
+project_structure:
+  - backend: Flask API and inference logic
+  - detection: Training scripts and evaluation
+  - fake-news-app: React Native mobile frontend
 
-The system is deployed using:
+setup:
+  backend:
+    commands:
+      - cd backend
+      - pip install -r requirements.txt
+      - python app.py
+  mobile_app:
+    commands:
+      - cd fake-news-app
+      - npm install
+      - expo start
 
-- Flask REST API (Backend)
-- React Native Mobile Application (Frontend)
+research_contribution:
+  - Comparative analysis between classical ML and Transformer models.
+  - Demonstration of contextual embedding effectiveness.
+  - Deployment-ready inference system with REST API.
+  - Mobile interface for real-time news verification.
 
----
+author:
+  name: Surya
+  qualification: B.Tech Computer Science and Engineering
 
-## 🧠 Motivation
-
-The rapid spread of misinformation across digital platforms poses significant societal challenges. Automated detection systems leveraging contextual language models can assist in mitigating fake news dissemination.
-
-This project explores both traditional and transformer-based deep learning methods for robust classification.
-
----
-
-## 📊 Experimental Results
-
-| Model | Accuracy |
-|--------|-----------|
-| Logistic Regression | 98.78% |
-| BERT (Transformer) | 99.98% |
-
-The high performance is attributed to contextual semantic modeling and structured dataset characteristics.
-
----
-
-## 📈 Model Architecture
-
-### Baseline Model
-- Text Vectorization: TF-IDF
-- Classifier: Logistic Regression
-
-### Deep Learning Model
-- Pretrained Model: `bert-base-uncased`
-- Fine-tuned for binary classification
-- Max Sequence Length: 256
-- Optimizer: AdamW
-- Loss Function: Cross-Entropy
-
----
-
-## 📂 Dataset
-
-Kaggle Fake and Real News Dataset.
-
-Due to size constraints, the dataset is not included in this repository.
-
-Download link:  
-https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset
-
----
-
-## ⚙️ Project Structure
-backend/ → Flask API and inference logic
-detection/ → Training scripts and evaluation
-fake-news-app/ → React Native mobile frontend
-
-
----
-
-## 🚀 Backend Setup
-
-```bash
-cd backend
-pip install -r requirements.txt
-python app.py
-
-##📱 Mobile App Setup
-cd fake-news-app
-npm install
-expo start
-##🔬 Research Contribution
-Comparative analysis between classical ML and Transformer models.
-
-Demonstration of contextual embedding effectiveness.
-
-Deployment-ready inference system with REST API.
-
-Mobile interface for real-time news verification.
-##👨‍💻 Author
-
-Surya
-B.Tech Computer Science and Engineering
-
-##📜 License
-
-This project is intended for academic and research purposes.
+license:
+  type: Academic and Research Use
+  description: This project is intended for academic and research purposes.
