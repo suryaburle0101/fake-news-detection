@@ -66,15 +66,12 @@ https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset
 ---
 
 ## ⚙️ Project Structure
-
-
-
 backend/ → Flask API and inference logic
 detection/ → Training scripts and evaluation
 fake-news-app/ → React Native mobile frontend
 
----
 
+---
 
 ## 🚀 Backend Setup
 
@@ -83,35 +80,23 @@ cd backend
 pip install -r requirements.txt
 python app.py
 
-
----
-
-## 📱 Mobile App Setup
+##📱 Mobile App Setup
 cd fake-news-app
 npm install
 expo start
+##🔬 Research Contribution
+Comparative analysis between classical ML and Transformer models.
 
+Demonstration of contextual embedding effectiveness.
 
+Deployment-ready inference system with REST API.
 
----
+Mobile interface for real-time news verification.
+##👨‍💻 Author
 
-## 🔬 Research Contribution
+Surya
+B.Tech Computer Science and Engineering
 
-- Comparative analysis between classical ML and Transformer models.
-- Demonstration of contextual embedding effectiveness.
-- Deployment-ready inference system with REST API.
-- Mobile interface for real-time news verification.
-
----
-
-## 👨‍💻 Author
-
-Surya  
-B.Tech Computer Science and Engineering  
-
----
-
-## 📜 License
+##📜 License
 
 This project is intended for academic and research purposes.
-
