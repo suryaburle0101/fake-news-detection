@@ -11,7 +11,7 @@ This project implements and evaluates multiple approaches for automated misinfor
 The study compares:
 
 - TF-IDF + Logistic Regression (Baseline)
-- BERT (bert-base-uncased Transformer Model)
+- BERT (`bert-base-uncased` Transformer Model)
 
 The system is deployed using:
 
@@ -66,6 +66,8 @@ https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset
 ---
 
 ## ⚙️ Project Structure
+
+
 
 backend/ → Flask API and inference logic
 detection/ → Training scripts and evaluation
