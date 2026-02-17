@@ -81,6 +81,7 @@ fake-news-app/    → React Native mobile frontend
 cd backend
 pip install -r requirements.txt
 python app.py
+```
 
 
 ---
@@ -91,7 +92,7 @@ python app.py
 cd fake-news-app
 npm install
 expo start
-
+```
 
 ---
 
